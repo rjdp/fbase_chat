@@ -5,19 +5,41 @@
     <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/twemoji/1.3.2/twemoji.min.js"></script>
     <link rel='stylesheet' type='text/css' href='css/styles.css'>
+    <link rel='stylesheet' type='text/css' href='css/bootstrap.min.css'>
+    <link rel='stylesheet' type='text/css' href='css/normalize.css'>
   </head>
   <body>
 
 
-  <h2>post using curl in 'name' and 'text' variable to 'https://sweltering-heat-9845.firebaseio.com/.json' like this </h2>
 
+<div class="panel panel-default">
+    <div class="panel-heading" style="height:19vh;" style="word-wrap: break-word;">  <h4>post using curl in 'name' and 'text' variable to 'https://sweltering-heat-9845.firebaseio.com/.json' like this :  curl  -d '{ "name": "your-name", "text": "message" }' 'https://sweltering-heat-9845.firebaseio.com/.json' 
+</h4>
  
-<h3>curl  -d '{ "name": "your-name", "text": "message" }' 'https://sweltering-heat-9845.firebaseio.com/.json'</h3>
-    <div id='messagesDiv'   style="padding-bottom:2%;margin-bottom: 6%;
-    overflow: scroll;
-    height: 400px;"></div>
-    <input  style= " position: fixed; bottom: 3%; width:16%; float:left;"    type='text' id='nameInput' placeholder='Name'>
-    <input  style= " position: fixed; bottom: 3%; width:80%;float:right;margin-left:18%;"   type='text' id='messageInput' placeholder='Message'>
+</div>
+    
+
+ <div id='messagesDiv'  class="panel-body" style="height:69vh;width:100%;overflow:scroll;overflow-x:hidden;overflow-y:scroll;
+    "></div>
+
+<div class="panel-footer clearfix" style="height:8vh;">
+     <div class="row">
+     <div class="col-xs-3"><input       type='text'  class="form-control" id='nameInput' placeholder='Name'></div>
+        <div class="col-xs-9">
+    <input    type='text' class="form-control" id='messageInput' placeholder='Message'>
+</div>
+
+     </div>
+
+        </div>
+
+
+      
+</div>
+
+
+   
+    
     <script>
       var myDataRef = new Firebase('https://sweltering-heat-9845.firebaseio.com/');
       $('#messageInput').keypress(function (e) {
