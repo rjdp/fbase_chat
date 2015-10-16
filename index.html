@@ -47,7 +47,11 @@
         if (e.keyCode == 13) {
           var name = $('#nameInput').val();
           var text = $('#messageInput').val();
+
+          if ($.trim(text)){
+            if (!$.trim(name)) {name = "Anonymous";}
           myDataRef.push({name: name, text: text});
+          }
           $('#messageInput').val('');
         }
       });
