@@ -16,17 +16,22 @@
 
 /*@import url(https://fonts.googleapis.com/css?family=Droid+Sans+Mono);*/
 
+.ghost-button {
+    color: #009688;
+    background: #fff;
+    border: 1px solid #009688;
+    font-size: 17px;
+    padding: 7px 12px;
+    font-weight: normal;
+    margin: 6px 0;
+    margin-right: 12px;
+    display: inline-block;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    min-width: 120px;
+}
 
-.btn{
-
-	background: #5CC3A7;
-	color: #F2F2F2;
-
-	/* CSS Transition */
-	-webkit-transition: background .2s ease-in-out, border .2s ease-in-out;
-	-moz-transition: background .2s ease-in-out, border .2s ease-in-out;
-	-ms-transition: background .2s ease-in-out, border .2s ease-in-out;
-	-o-transition: background .2s ease-in-out, border .2s ease-in-out;
-	transition: background .2s ease-in-out, border .2s ease-in-out;
-
+.ghost-button:hover, .ghost-button:active {
+  color:#fff;
+  background:#009688;
 }
